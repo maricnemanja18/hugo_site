@@ -2,3 +2,8 @@ baseURL = 'http://localhost'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'compose'
+
+[deployment]
+  [[deployment.targets]]
+    name = 'production'
+    url = 's3://docs-staticsite?region=eu-central-1'
